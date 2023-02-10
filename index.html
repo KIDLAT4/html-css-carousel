@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .gallery{
+      width: 36rem;
+      height: 23rem;
+      position: relative;
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      border-radius: 15px;
+      box-shadow: 0 15px 15px 4px;
+    }
+    ::-webkit-scrollbar{display: none;}
+    .gallery img{
+      width: 100%;
+      height: 100%;
+      position: sticky;
+      left: 0;
+      flex-shrink: 0;
+      object-fit: cover;
+      scroll-snap-type: start;
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <img src="https://images.pexels.com/photos/13866617/pexels-photo-13866617.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    <img src="https://images.pexels.com/photos/13734112/pexels-photo-13734112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    <img src="https://images.pexels.com/photos/14004970/pexels-photo-14004970.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    <img src="https://images.pexels.com/photos/9186037/pexels-photo-9186037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+    <img src="https://images.pexels.com/photos/9968415/pexels-photo-9968415.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+  </div>
+</body>
+</html>
